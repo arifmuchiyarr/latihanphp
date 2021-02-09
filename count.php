@@ -8,9 +8,9 @@ $jumlah; $temp;
 // {
 //    echo "Huruf \"" , chr($i) , "\" muncul $val kali.<br>";
 // }
-
- for ($h=0; $h < count($array) ; $h++) { 
-     for ($i=$h+1; $i < count($array); $i++) { 
+$total = count($array);
+ for ($h=0; $h < $total  ; $h++) { 
+     for ($i=$h+1; $i < $total ; $i++) { 
          if ($array[$h]>$array[$i]) {
              $temp=$array[$i];
              $array[$i]=$array[$h];
@@ -22,7 +22,7 @@ $jumlah; $temp;
  echo  "<br>Banyak kemunculan data : ";
  echo"<br/>";
 
- for($h=0; $h<count($array); $h++)  
+ for($h=0; $h<$total ; $h++)  
     {  
         $jumlah = 0;  
         for( $i=0; $i<10; $i++)  
